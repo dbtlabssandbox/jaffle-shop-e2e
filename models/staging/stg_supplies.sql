@@ -1,3 +1,5 @@
+-- depends_on: {{ ref('raw_supplies') }}
+
 with
 
 source as (
