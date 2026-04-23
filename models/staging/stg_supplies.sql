@@ -1,10 +1,8 @@
--- depends_on: {{ ref('raw_supplies') }}
-
 with
 
 source as (
 
-    select * from {{ source('ecom', 'raw_supplies') }}
+    select * from {{ ref('raw_supplies') }}
 
 ),
 
